@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const dotenv = require('dotenv');
 dotenv.config();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8000;
 
 
 app.use(express.json());
@@ -22,6 +22,7 @@ app.get("/:user", function(req, res) {
         age: user.age,
         requestedURL: user.reqUrl
     })
+    
 })
 }
 

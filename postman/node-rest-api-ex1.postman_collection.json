@@ -1,0 +1,28 @@
+{
+	"info": {
+		"_postman_id": "119f9e5d-faae-4ebb-b01a-fa25b55e2572",
+		"name": "node-rest-api-ex1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/jemimah",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"jemimah"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
