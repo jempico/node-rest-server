@@ -1,17 +1,15 @@
-let user = {
-    name: 'Jemimah',
-    age: 31
-}
+const userModel = require("../models/user");
+const userMock = require("./createUser")
 
 // READ USER
 const readUser = (req, res) => {
         const {id} = req.params;
-        user.reqUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
-    
+        userMock.reqUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
+        
         res.json({
-            name: user.name,
-            age: user.age,
-            requestedURL: user.reqUrl
+            name: userMock.name,
+            age: userMock.age,
+            requestedURL: userMock.reqUrl
         })
         
     }
