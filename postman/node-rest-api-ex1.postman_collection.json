@@ -6,23 +6,67 @@
 	},
 	"item": [
 		{
-			"name": "Get user",
+			"name": "GET USER",
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": {
-					"raw": "http://localhost:3000/jemimah",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"jemimah"
-					]
-				}
+				"url": null
 			},
-			"response": []
+			"response": [
+				{
+					"name": "GET USER",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "71"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"47-U7GVe61VIle4fmfkXhyoGaN5QiA\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Apr 2021 11:10:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Jemimah\",\n    \"age\": 31,\n    \"requestedURL\": \"http://localhost:3000/user\"\n}"
+				}
+			]
 		}
 	]
 }

@@ -3,7 +3,7 @@ const router = express.Router();
 const readUser = require('../services/readUser')
 
 router
-    .route("/:name")
+    .route("/user")
     .get(readUser)
 
 module.exports = router;
